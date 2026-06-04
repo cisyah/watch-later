@@ -51,14 +51,27 @@ npm i -g vercel
 vercel dev
 ```
 
+## 前置条件
+
+本项目依赖以下服务，需要自行配置后才能使用：
+
+| 服务 | 说明 | 获取方式 |
+|------|------|----------|
+| **Coze Bot** | 智能体核心，需自行创建 Bot 并配置工作流 | [coze.cn](https://www.coze.cn) |
+| **飞书多维表格** | 数据存储，需创建表格并配置字段（title、url、abstract、date） | [feishu.cn](https://www.feishu.cn) |
+| **Coze Bot 工作流** | Bot 内需配置：URL 解析 → LLM 摘要 → 飞书写入 | Coze Bot 编辑页面 |
+| **飞书自动提醒** | 在多维表格中配置定时提醒规则 | 飞书多维表格自动化 |
+
+> ⚠️ 本项目在线体验版连接的是作者自己的飞书表格，数据不会写入你的账户。克隆后需要按上述步骤自行配置。
+
 ## 环境变量
 
 在 Vercel 项目设置中配置：
 
 | 变量名 | 说明 |
 |--------|------|
-| `COZE_PAT_TOKEN` | Coze 平台的 Personal Access Token |
-| `COZE_BOT_ID` | Coze Bot ID（可选，默认使用内置 ID） |
+| `COZE_PAT_TOKEN` | Coze 平台的 Personal Access Token（需要 Bot 和飞书相关权限） |
+| `COZE_BOT_ID` | 你自己的 Coze Bot ID（默认使用示例 Bot ID） |
 
 ## License
 
