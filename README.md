@@ -2,7 +2,7 @@
 
 一个把 URL 自动沉淀到飞书多维表格，并配合定时提醒完成稍后阅读闭环的 Coze 智能体。
 
-**🔗 在线体验：** https://watch-later-rho.vercel.app/
+**🔗 在线体验：** http://watch-later.xuyh.site
 
 ## 它做什么
 
