@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>稍后阅读智能体 | Coze + 飞书多维表格</title>
+    <title>ReadFlow | AI 链接管理</title>
     <meta
       name="description"
-      content="一个把 URL 自动沉淀到飞书多维表格，并配合定时提醒完成稍后阅读闭环的 Coze 智能体介绍页。"
+      content="ReadFlow — AI 驱动的链接管理工具。粘贴 URL，自动提取标题、生成摘要、写入飞书多维表格，配合定时提醒完成阅读闭环。"
     />
     <style>
       :root {
@@ -693,7 +693,7 @@
         <section class="hero-grid" aria-label="产品概览">
           <div class="panel intro-panel">
             <p class="intro-copy">
-              稍后阅读智能体面向信息收集和内容复盘场景。用户只需要把 URL 发给 Coze 智能体，智能体会解析链接并写入飞书多维表格；后续的每日提醒由飞书表格自动触发，形成「收集、归档、提醒、阅读」的轻量闭环。
+              ReadFlow 面向信息收集和内容复盘场景。用户只需要提交一个 URL，系统会自动解析链接并写入飞书多维表格；后续的每日提醒由飞书表格自动触发，形成「收集、归档、提醒、阅读」的轻量闭环。
             </p>
 
             <form class="url-form" id="try" data-url-form>
@@ -771,12 +771,12 @@
               <article class="step">
                 <b>01</b>
                 <h3>输入链接</h3>
-                <p>在 Coze 智能体或介绍页表单中提交文章、视频、文档等 URL。</p>
+                <p>在 ReadFlow 或下方表单中提交文章、视频、文档等 URL。</p>
               </article>
               <article class="step">
                 <b>02</b>
                 <h3>解析信息</h3>
-                <p>智能体提取标题、链接和创建日期，形成可写入表格的基础字段。</p>
+                <p>系统自动提取标题、链接和创建日期，形成可写入表格的基础字段。</p>
               </article>
               <article class="step">
                 <b>03</b>
@@ -916,7 +916,7 @@
             throw new Error(`HTTP ${response.status}`);
           }
 
-          statusLine.textContent = "添加成功：链接已提交到稍后阅读智能体。";
+          statusLine.textContent = "添加成功：链接已提交到 ReadFlow。";
           form.reset();
         } catch (error) {
           statusLine.textContent = `提交失败：${error.message}`;
